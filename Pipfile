@@ -3,10 +3,22 @@ url = "https://pypi.org/simple"
 verify_ssl = true
 name = "pypi"
 
+[[source]]
+name = "pytorch"
+url = "https://download.pytorch.org/whl/cpu"
+verify_ssl = false
+
 [packages]
 jupyter = "*"
 scikit-learn = "*"
 pandas = "*"
+ipython = "*"
+catppuccin-jupyterlab = "*"
+transformers = "*"
+tqdm = "*"
+torch = {version="*", index="pytorch"}
+torchvision = {version="*", index="pytorch"}
+torchaudio = {version="*", index="pytorch"}
 
 [dev-packages]
 
